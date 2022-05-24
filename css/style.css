@@ -1,0 +1,305 @@
+
+.hotel_img {
+    width: 100%;
+}
+
+.container {
+    padding: 0.8rem;
+}
+
+.text {
+    color: #696969;
+    padding: 0;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+
+/* PRIMA COLONNA */
+/* card img */
+
+.hotel_img {
+    width: 100%;
+}
+
+.ms_img_container img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* card-like */
+.img_heart{
+    width: 30px;
+    background-color: white;
+    height: 30px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.3rem;
+    right: 3.1rem;
+}
+
+.img_heart i {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    filter: invert(30%);
+}
+
+.img_heart:hover i {
+    color: red  ;
+} 
+
+
+/* SECONDA COLONNA */
+/* title product card */
+.my_container_right h2 {
+    padding-left: 2.1rem;
+}
+
+.ms_card_container {
+    width: 92%;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+
+/* card circles */
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: #04a96c;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.circles-piont .n_recension{
+    text-decoration: dashed;
+    color: #636363;
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: text-bottom;
+}
+
+
+.sanitary-measures .text.hidden_mobile {
+    display: none;
+}
+
+/* TERZA colonna */
+
+.offers_container.flex{
+    margin: 1rem 0;
+    justify-content: space-between;
+}
+
+.price-link img{
+    width: 50%;
+    display: none;
+}
+
+.old_price{
+    color: red;
+    text-decoration: line-through;
+}
+
+.offers_container.flex .price {
+    margin: 0;
+
+}
+
+.offers_container.flex a{
+    display: inline-block;
+
+}
+
+.external-link .text.link-site-offers i {
+    color: #636363;
+    display: inline-block;
+}
+
+.to_delete span{
+    font-weight: 700;
+}
+
+
+/* bottone */
+.btn.btn-warning a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.btn.btn-warning:hover a {
+    color: lightskyblue;
+}
+
+
+/* quarta colonna */
+.compare_mobile {
+    border-top: 1px solid #636363;
+    text-align: center;
+}
+
+.compare_mobile p {
+    padding: 0.7rem 0;
+}
+
+.compare_large ul {
+    padding: 0;
+    display: none;
+    border-bottom: 1px dotted gray;
+    
+}
+
+.compare_large p {
+    display: none;
+}
+
+
+
+
+
+
+/********************* media ********************/
+@media screen and (min-width:992px){
+    
+    main{
+        max-height: 350px;
+    }
+
+    .hotel_img{
+        height: 100%;
+        object-fit: cover;
+    }
+    main {
+        display: flex;
+    }
+
+    .my_container_right {
+        width: 75%;
+    }
+
+
+
+
+    /* misure sanitarie */
+    .sanitary-measures .text.hidden_mobile {
+        display: inline-block;
+    }
+
+    
+
+    /* seconda colonna */
+    #seconda-colonna {
+        width: 39%;
+    }
+
+    .my_container_right h2 {
+        padding-left: 1rem;
+    }
+
+    .offers_container.flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* bottone  */
+    .btn.btn-warning.btn-lg{        
+        margin: 0.4rem 0 0.1rem;
+        width: 100%;
+    }
+
+    .sanitary-measures {
+        margin-top: 1rem;
+    }
+
+    /* TERZA colonna */
+    #terza-colonna {
+        width: 30%;
+    }
+
+    .price-link img {
+        display: inline-block;
+        width: 63%;
+    }
+
+    /* quarta colonna */
+    #quarta-colonna {
+        width: 23%;
+        margin-top:1.6rem;
+    }
+
+    /* .compare_large */
+
+    .compare_large {
+        border-left: 1px dotted gray;
+        border-right: 1px dotted gray;
+    }
+
+    .compare_large ul {
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .compare_large li .compare_price_red {
+        color: red;
+    }
+
+    .compare_large li .compare_price {
+        font-weight: 700;
+    }
+
+
+    .compare_large ul .text {
+        text-decoration: none;
+    }
+    
+    .compare_large p{
+        font-weight: 700;
+        font-size: 12px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    /* compare_mobile */
+
+    .compare_mobile {
+        border-top: none;
+        border-left: 1px dotted gray;
+    }
+
+    .compare_mobile .text {
+        display: none;
+        border-top: 0;
+    }
+
+    .product-card .ms_card_container{
+        order: 2;
+        margin-left: 1rem;
+    }
+
+    .ms_card_container .compare_mobile .compare_large{
+        order: 3;
+    }
+
+    #seconda-colonna{
+        order: 4;
+        margin-top: 1.6rem;
+    }
+
+}
+
+
